@@ -1,4 +1,5 @@
 # 2024-NC2-M26-SpriteKit
+<img width="808" alt="스크린샷 2024-06-19 오전 11 29 28" src="https://github.com/DeveloperAcademy-POSTECH/2024-NC2-M26-SpriteKit/assets/84498457/593f337f-5d24-4c71-9a36-1ee03c6eef8d">
 
 ## Team
 |<img src="https://avatars.githubusercontent.com/u/84498457?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/113842420?v=4" width="150" height="150"/>|
