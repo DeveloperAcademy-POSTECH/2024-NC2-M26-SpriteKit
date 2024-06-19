@@ -1,9 +1,9 @@
 //
 //  StartScene.swift
-//  NC2_SpriteKit
+//  NC2_SpriteKitGame
 //
-//  Created by 김상준 on 6/15/24.
-
+//  Created by 김상준 on 6/19/24.
+//
 
 import Foundation
 import SpriteKit
@@ -57,3 +57,4 @@ class StartScene: SKScene{
     }
     
 }
+

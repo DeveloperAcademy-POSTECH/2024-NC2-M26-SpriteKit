@@ -7,45 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0D49FA2C1D7A0C0040684B /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D49F92C1D7A0C0040684B /* StartScene.swift */; };
-		1D0D4A022C1F58300040684B /* CharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D4A012C1F58300040684B /* CharacterScene.swift */; };
-		1D3E9C682C19F2ED00812FE1 /* NC2_SpriteKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E9C672C19F2ED00812FE1 /* NC2_SpriteKitApp.swift */; };
-		1D3E9C6A2C19F2ED00812FE1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E9C692C19F2ED00812FE1 /* HomeView.swift */; };
-		1D3E9C6C2C19F2EE00812FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E9C6B2C19F2EE00812FE1 /* Assets.xcassets */; };
-		1D3E9C6F2C19F2EE00812FE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3E9C6E2C19F2EE00812FE1 /* Preview Assets.xcassets */; };
-		1D3E9C7A2C19FCDB00812FE1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E9C792C19FCDB00812FE1 /* GameScene.swift */; };
-		1D3E9C7C2C1A17C900812FE1 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E9C7B2C1A17C900812FE1 /* GameOverScene.swift */; };
+		1D7FD3C22C227CD600F1AB74 /* NC2_SpriteKitGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3C12C227CD600F1AB74 /* NC2_SpriteKitGameApp.swift */; };
+		1D7FD3C42C227CD600F1AB74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3C32C227CD600F1AB74 /* HomeView.swift */; };
+		1D7FD3C62C227CD700F1AB74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7FD3C52C227CD700F1AB74 /* Assets.xcassets */; };
+		1D7FD3C92C227CD700F1AB74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7FD3C82C227CD700F1AB74 /* Preview Assets.xcassets */; };
+		1D7FD3D32C227D1800F1AB74 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3D22C227D1800F1AB74 /* StartScene.swift */; };
+		1D7FD3D52C227D2300F1AB74 /* CharacterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3D42C227D2300F1AB74 /* CharacterScene.swift */; };
+		1D7FD3D72C227D2B00F1AB74 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3D62C227D2B00F1AB74 /* GameScene.swift */; };
+		1D7FD3D92C227D3200F1AB74 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7FD3D82C227D3200F1AB74 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D0D49F92C1D7A0C0040684B /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
-		1D0D4A012C1F58300040684B /* CharacterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScene.swift; sourceTree = "<group>"; };
-		1D0D4A092C2122FD0040684B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1D3E9C642C19F2ED00812FE1 /* BunnyJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BunnyJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D3E9C672C19F2ED00812FE1 /* NC2_SpriteKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_SpriteKitApp.swift; sourceTree = "<group>"; };
-		1D3E9C692C19F2ED00812FE1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		1D3E9C6B2C19F2EE00812FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D3E9C6E2C19F2EE00812FE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1D3E9C792C19FCDB00812FE1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		1D3E9C7B2C1A17C900812FE1 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		1D7FD3BE2C227CD600F1AB74 /* NC2_SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2_SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7FD3C12C227CD600F1AB74 /* NC2_SpriteKitGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_SpriteKitGameApp.swift; sourceTree = "<group>"; };
+		1D7FD3C32C227CD600F1AB74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1D7FD3C52C227CD700F1AB74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D7FD3C82C227CD700F1AB74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D7FD3D22C227D1800F1AB74 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		1D7FD3D42C227D2300F1AB74 /* CharacterScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScene.swift; sourceTree = "<group>"; };
+		1D7FD3D62C227D2B00F1AB74 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1D7FD3D82C227D3200F1AB74 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		1D7FD3DA2C227DD000F1AB74 /* NC2-SpriteKitGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NC2-SpriteKitGame-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1D0D4A082C2122D40040684B /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				neodgm.ttf,
-			);
-			target = 1D3E9C632C19F2ED00812FE1 /* BunnyJump */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1D0D4A052C2122BF0040684B /* Font */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1D0D4A082C2122D40040684B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Font; sourceTree = "<group>"; };
+		1D7FD3D02C227D0100F1AB74 /* Font */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Font; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D3E9C612C19F2ED00812FE1 /* Frameworks */ = {
+		1D7FD3BB2C227CD600F1AB74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,43 +45,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D3E9C5B2C19F2ED00812FE1 = {
+		1D7FD3B52C227CD600F1AB74 = {
 			isa = PBXGroup;
 			children = (
-				1D3E9C662C19F2ED00812FE1 /* NC2_SpriteKit */,
-				1D3E9C652C19F2ED00812FE1 /* Products */,
+				1D7FD3C02C227CD600F1AB74 /* NC2_SpriteKitGame */,
+				1D7FD3BF2C227CD600F1AB74 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1D3E9C652C19F2ED00812FE1 /* Products */ = {
+		1D7FD3BF2C227CD600F1AB74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D3E9C642C19F2ED00812FE1 /* BunnyJump.app */,
+				1D7FD3BE2C227CD600F1AB74 /* NC2_SpriteKitGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1D3E9C662C19F2ED00812FE1 /* NC2_SpriteKit */ = {
+		1D7FD3C02C227CD600F1AB74 /* NC2_SpriteKitGame */ = {
 			isa = PBXGroup;
 			children = (
-				1D0D4A092C2122FD0040684B /* Info.plist */,
-				1D0D4A052C2122BF0040684B /* Font */,
-				1D3E9C672C19F2ED00812FE1 /* NC2_SpriteKitApp.swift */,
-				1D3E9C692C19F2ED00812FE1 /* HomeView.swift */,
-				1D0D49F92C1D7A0C0040684B /* StartScene.swift */,
-				1D0D4A012C1F58300040684B /* CharacterScene.swift */,
-				1D3E9C792C19FCDB00812FE1 /* GameScene.swift */,
-				1D3E9C7B2C1A17C900812FE1 /* GameOverScene.swift */,
-				1D3E9C6B2C19F2EE00812FE1 /* Assets.xcassets */,
-				1D3E9C6D2C19F2EE00812FE1 /* Preview Content */,
+				1D7FD3DA2C227DD000F1AB74 /* NC2-SpriteKitGame-Info.plist */,
+				1D7FD3D02C227D0100F1AB74 /* Font */,
+				1D7FD3C12C227CD600F1AB74 /* NC2_SpriteKitGameApp.swift */,
+				1D7FD3C32C227CD600F1AB74 /* HomeView.swift */,
+				1D7FD3D22C227D1800F1AB74 /* StartScene.swift */,
+				1D7FD3D42C227D2300F1AB74 /* CharacterScene.swift */,
+				1D7FD3D62C227D2B00F1AB74 /* GameScene.swift */,
+				1D7FD3D82C227D3200F1AB74 /* GameOverScene.swift */,
+				1D7FD3C52C227CD700F1AB74 /* Assets.xcassets */,
+				1D7FD3C72C227CD700F1AB74 /* Preview Content */,
 			);
-			path = NC2_SpriteKit;
+			path = NC2_SpriteKitGame;
 			sourceTree = "<group>";
 		};
-		1D3E9C6D2C19F2EE00812FE1 /* Preview Content */ = {
+		1D7FD3C72C227CD700F1AB74 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1D3E9C6E2C19F2EE00812FE1 /* Preview Assets.xcassets */,
+				1D7FD3C82C227CD700F1AB74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -99,39 +89,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D3E9C632C19F2ED00812FE1 /* BunnyJump */ = {
+		1D7FD3BD2C227CD600F1AB74 /* NC2_SpriteKitGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D3E9C722C19F2EE00812FE1 /* Build configuration list for PBXNativeTarget "BunnyJump" */;
+			buildConfigurationList = 1D7FD3CC2C227CD700F1AB74 /* Build configuration list for PBXNativeTarget "NC2_SpriteKitGame" */;
 			buildPhases = (
-				1D3E9C602C19F2ED00812FE1 /* Sources */,
-				1D3E9C612C19F2ED00812FE1 /* Frameworks */,
-				1D3E9C622C19F2ED00812FE1 /* Resources */,
+				1D7FD3BA2C227CD600F1AB74 /* Sources */,
+				1D7FD3BB2C227CD600F1AB74 /* Frameworks */,
+				1D7FD3BC2C227CD600F1AB74 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BunnyJump;
-			productName = BunnyJump;
-			productReference = 1D3E9C642C19F2ED00812FE1 /* BunnyJump.app */;
+			fileSystemSynchronizedGroups = (
+				1D7FD3D02C227D0100F1AB74 /* Font */,
+			);
+			name = NC2_SpriteKitGame;
+			productName = NC2_SpriteKitGame;
+			productReference = 1D7FD3BE2C227CD600F1AB74 /* NC2_SpriteKitGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1D3E9C5C2C19F2ED00812FE1 /* Project object */ = {
+		1D7FD3B62C227CD600F1AB74 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					1D3E9C632C19F2ED00812FE1 = {
+					1D7FD3BD2C227CD600F1AB74 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 1D3E9C5F2C19F2ED00812FE1 /* Build configuration list for PBXProject "NC2_SpriteKit" */;
+			buildConfigurationList = 1D7FD3B92C227CD600F1AB74 /* Build configuration list for PBXProject "NC2_SpriteKitGame" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,46 +132,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 1D3E9C5B2C19F2ED00812FE1;
-			productRefGroup = 1D3E9C652C19F2ED00812FE1 /* Products */;
+			mainGroup = 1D7FD3B52C227CD600F1AB74;
+			productRefGroup = 1D7FD3BF2C227CD600F1AB74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D3E9C632C19F2ED00812FE1 /* BunnyJump */,
+				1D7FD3BD2C227CD600F1AB74 /* NC2_SpriteKitGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D3E9C622C19F2ED00812FE1 /* Resources */ = {
+		1D7FD3BC2C227CD600F1AB74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3E9C6F2C19F2EE00812FE1 /* Preview Assets.xcassets in Resources */,
-				1D3E9C6C2C19F2EE00812FE1 /* Assets.xcassets in Resources */,
+				1D7FD3C92C227CD700F1AB74 /* Preview Assets.xcassets in Resources */,
+				1D7FD3C62C227CD700F1AB74 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1D3E9C602C19F2ED00812FE1 /* Sources */ = {
+		1D7FD3BA2C227CD600F1AB74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D3E9C7A2C19FCDB00812FE1 /* GameScene.swift in Sources */,
-				1D3E9C6A2C19F2ED00812FE1 /* HomeView.swift in Sources */,
-				1D3E9C7C2C1A17C900812FE1 /* GameOverScene.swift in Sources */,
-				1D0D49FA2C1D7A0C0040684B /* StartScene.swift in Sources */,
-				1D0D4A022C1F58300040684B /* CharacterScene.swift in Sources */,
-				1D3E9C682C19F2ED00812FE1 /* NC2_SpriteKitApp.swift in Sources */,
+				1D7FD3D72C227D2B00F1AB74 /* GameScene.swift in Sources */,
+				1D7FD3C42C227CD600F1AB74 /* HomeView.swift in Sources */,
+				1D7FD3D32C227D1800F1AB74 /* StartScene.swift in Sources */,
+				1D7FD3D52C227D2300F1AB74 /* CharacterScene.swift in Sources */,
+				1D7FD3D92C227D3200F1AB74 /* GameOverScene.swift in Sources */,
+				1D7FD3C22C227CD600F1AB74 /* NC2_SpriteKitGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1D3E9C702C19F2EE00812FE1 /* Debug */ = {
+		1D7FD3CA2C227CD700F1AB74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		1D3E9C712C19F2EE00812FE1 /* Release */ = {
+		1D7FD3CB2C227CD700F1AB74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,31 +290,31 @@
 			};
 			name = Release;
 		};
-		1D3E9C732C19F2EE00812FE1 /* Debug */ = {
+		1D7FD3CD2C227CD700F1AB74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NC2_SpriteKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NC2_SpriteKitGame/Preview Content\"";
 				DEVELOPMENT_TEAM = MQR4AUJW5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BunnyJump/Info.plist;
+				INFOPLIST_FILE = "NC2-SpriteKitGame-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = JumpUpLearner;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sangjun.kim.BunnyJump;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sangjunKim.NC2-SpriteKitGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -333,31 +326,31 @@
 			};
 			name = Debug;
 		};
-		1D3E9C742C19F2EE00812FE1 /* Release */ = {
+		1D7FD3CE2C227CD700F1AB74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NC2_SpriteKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NC2_SpriteKitGame/Preview Content\"";
 				DEVELOPMENT_TEAM = MQR4AUJW5C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BunnyJump/Info.plist;
+				INFOPLIST_FILE = "NC2-SpriteKitGame-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = JumpUpLearner;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sangjun.kim.BunnyJump;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sangjunKim.NC2-SpriteKitGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -372,25 +365,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D3E9C5F2C19F2ED00812FE1 /* Build configuration list for PBXProject "NC2_SpriteKit" */ = {
+		1D7FD3B92C227CD600F1AB74 /* Build configuration list for PBXProject "NC2_SpriteKitGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D3E9C702C19F2EE00812FE1 /* Debug */,
-				1D3E9C712C19F2EE00812FE1 /* Release */,
+				1D7FD3CA2C227CD700F1AB74 /* Debug */,
+				1D7FD3CB2C227CD700F1AB74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D3E9C722C19F2EE00812FE1 /* Build configuration list for PBXNativeTarget "BunnyJump" */ = {
+		1D7FD3CC2C227CD700F1AB74 /* Build configuration list for PBXNativeTarget "NC2_SpriteKitGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D3E9C732C19F2EE00812FE1 /* Debug */,
-				1D3E9C742C19F2EE00812FE1 /* Release */,
+				1D7FD3CD2C227CD700F1AB74 /* Debug */,
+				1D7FD3CE2C227CD700F1AB74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1D3E9C5C2C19F2ED00812FE1 /* Project object */;
+	rootObject = 1D7FD3B62C227CD600F1AB74 /* Project object */;
 }

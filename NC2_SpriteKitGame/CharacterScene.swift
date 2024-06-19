@@ -1,8 +1,8 @@
 //
 //  CharacterScene.swift
-//  NC2_SpriteKit
+//  NC2_SpriteKitGame
 //
-//  Created by 김상준 on 6/17/24.
+//  Created by 김상준 on 6/19/24.
 //
 
 import Foundation
@@ -87,4 +87,5 @@ class CharacterScene: SKScene {
         self.view?.presentScene(gameScene, transition: transition)
     }
 }
+
 
