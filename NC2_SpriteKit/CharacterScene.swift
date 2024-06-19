@@ -1,6 +1,6 @@
 //
 //  CharacterScene.swift
-//  BunnyJump
+//  NC2_SpriteKit
 //
 //  Created by 김상준 on 6/17/24.
 //
@@ -25,7 +25,7 @@ class CharacterScene: SKScene {
         addChild(background)
     }
     
-    func setupCharacterButtons() {ㄷ
+    func setupCharacterButtons() {
         //MARK: 루피 버튼
         
         let luffyButton = createCharacterButton(

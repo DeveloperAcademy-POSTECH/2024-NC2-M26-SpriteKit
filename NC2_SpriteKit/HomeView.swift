@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  BunnyJump
+//  NC2_SpriteKit
 //
 //  Created by 김상준 on 6/13/24.
 //
@@ -13,7 +13,6 @@ struct HomeView: View {
         SpriteView(scene: StartScene())
 //        SpriteView(scene: GameOverScene())
             .ignoresSafeArea()
-        
 
     }
 }

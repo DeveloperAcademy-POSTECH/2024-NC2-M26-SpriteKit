@@ -1,6 +1,6 @@
 //
 //  StartScene.swift
-//  BunnyJump
+//  NC2_SpriteKit
 //
 //  Created by 김상준 on 6/15/24.
 
