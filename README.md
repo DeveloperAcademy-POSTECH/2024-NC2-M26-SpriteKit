@@ -3,7 +3,7 @@
 ## Team
 |<img src="https://avatars.githubusercontent.com/u/84498457?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/113842420?v=4" width="150" height="150"/>|
 |:-:|:-:|
-|Sang Jun<br/>[@kimsangjunzzang](https://github.com/kimsangjunzzang)|[@bbang2001](https://github.com/bbang2001)|
+|Luffy(테크)<br/>[@kimsangjunzzang](https://github.com/kimsangjunzzang)|Rara(디자인)<br/>[@bbang2001](https://github.com/bbang2001)|
 
 ## 🎥 Youtube Link
 (추후 만들어진 유튜브 링크 추가)
