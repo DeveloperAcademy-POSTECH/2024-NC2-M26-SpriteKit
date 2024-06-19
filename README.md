@@ -31,8 +31,8 @@ SpriteKit은 Apple에서 제공하는 2D 게임 개발 프레임워크로, iOS, 
 > 러너들이 가볍게 즐길 수 있도록 Apple developer Academy를 배경으로 한 점핑 게임을 만들자!
 
 ## 🖼️ Prototype
-(프로토타입과 설명 추가)
+![PrototypeMovie](https://github.com/kimsangjunzzang/NC2_SpriteKit_Game/assets/84498457/34a585a8-e0c5-43ec-bb78-1c85a56915cd)
 
 ## 🛠️ About Code
-(핵심 코드에 대한 설명 추가)
+<img width="1298" alt="코드" src="https://github.com/kimsangjunzzang/NC2_SpriteKit_Game/assets/84498457/a5a9afbf-3e78-426a-9742-15a7aae932a4">
 
