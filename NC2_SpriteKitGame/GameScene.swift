@@ -150,6 +150,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     //MARK: Score 위치 설정 함수
     func setupScore(){
+        //MARK: BestScore
+        bestScore = defaults.integer(forKey: "best")
+        bestScoreLabel.position.x = 90
+        bestScoreLabel.zPosition = 20
+        bestScoreLabel.fontColor = .black
+        bestScoreLabel.fontSize = 20
+        bestScoreLabel.text = "BestScore: \(bestScore)"
+        addChild(bestScoreLabel)
+        
         //MARK: Score
         scoreLabel.position.x = 70
         scoreLabel.zPosition = 20
@@ -158,15 +167,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         scoreLabel.text = "Score: \(score)"
         addChild(scoreLabel)
         
-        //MARK: BestScore
-        
-        bestScore = defaults.integer(forKey: "best")
-        bestScoreLabel.position.x = 100
-        bestScoreLabel.zPosition = 20
-        bestScoreLabel.fontColor = .black
-        bestScoreLabel.fontSize = 20
-        bestScoreLabel.text = "BestScore: \(bestScore)"
-        addChild(bestScoreLabel)
+      
         
     }
     
@@ -181,8 +182,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         }
         
         // 스코어 라벨 위치 조정
-        bestScoreLabel.position.y = player.position.y + 450
-        scoreLabel.position.y = player.position.y + 400
+        bestScoreLabel.position.y = player.position.y + 400
+        scoreLabel.position.y = player.position.y + 350
         
     }
     

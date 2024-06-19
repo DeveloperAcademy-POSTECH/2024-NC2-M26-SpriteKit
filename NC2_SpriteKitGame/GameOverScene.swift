@@ -29,6 +29,7 @@ class GameOverScene: SKScene{
         background.size = self.size
         addChild(background)
     }
+    
     func setupGameOverImg() {
         
         let playerImage = SKSpriteNode(imageNamed: selectedCharacter)
