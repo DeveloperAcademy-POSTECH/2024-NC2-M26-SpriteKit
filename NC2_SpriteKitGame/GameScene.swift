@@ -117,18 +117,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         camera = cam
     }
     
-    //MARK: CoreMotion 설정 함수
-    func setupMotionManager(){
-        if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 1/60
-            motionManager.startDeviceMotionUpdates(to: .main) { [weak self] (data, error) in
-                guard let self = self, let data = data else { return }
-                self.processDeviceMotion(data)
-            }
-        }
-        
-    }
-    
     //MARK: GameOverLine 설정함수
     func setupGameOverLine(){
         
@@ -171,6 +159,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         
     }
     
+    //MARK: 캐릭터 좌우 움직임
+    func processDeviceMotion(_ data: CMDeviceMotion) {
+        let attitude = data.attitude
+        let roll = attitude.roll // 세로축을 중심으로 회전하는 것 (휴대폰을 좌우로 기울이는 것)
+        let sensitivity: CGFloat = 0.5 // 민감도
+        let maxVelocity: CGFloat = 1000 //속도 제한
+        currentXVelocity = roll * sensitivity * maxVelocity
+        player.physicsBody?.velocity.dx = currentXVelocity
+    }
+    
+    //MARK: CoreMotion 설정 함수
+    func setupMotionManager(){
+        if motionManager.isDeviceMotionAvailable {
+            motionManager.deviceMotionUpdateInterval = 1/60     // 모션 데이터 업데이트 주기
+            motionManager.startDeviceMotionUpdates(to: .main) { // 모션 데이터 업데이트 시작
+                [weak self] (data, error) in
+                guard let self = self, let data = data else { return } // 데이터 있는지 없는지 확인
+                self.processDeviceMotion(data)
+            }
+        }
+        
+    }
+    
     // MARK: player 위치에 따른 Update 함수
     override func update(_ currentTime: TimeInterval) {
         cam.position.y = player.position.y + 250
@@ -187,15 +198,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         
     }
     
-    //MARK: 캐릭터 좌우 움직임
-    func processDeviceMotion(_ data: CMDeviceMotion) {
-        let attitude = data.attitude
-        let roll = attitude.roll
-        let sensitivity: CGFloat = 0.5
-        let maxVelocity: CGFloat = 1000
-        currentXVelocity = roll * sensitivity * maxVelocity
-        player.physicsBody?.velocity.dx = currentXVelocity
-    }
     //MARK: 첫번째 터치시만 클릭시 반응
     override func touchesBegan(_ touches: Set<UITouch>,with event: UIEvent?) {
         if !firstJump {
@@ -209,23 +211,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     func didBegin(_ contact: SKPhysicsContact) {
         let contactA: SKPhysicsBody
         let contactB: SKPhysicsBody
+        
+        // 비트 마스크를 통한 객체의 종류를 구분한다. 비트 마스크가 더 작은 값을 플레이어로 선언
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask{
             contactA = contact.bodyA // player
             contactB = contact.bodyB // platform
             
         }else{
             contactA = contact.bodyB // player
-            contactB = contact.bodyA //platform
+            contactB = contact.bodyA // platform
         }
         
-        // 플랫폼 밟을시
+        // 플랫폼 밟을시, 가속도가 0 미만일 경우 (낙하) 점프 가능
         if player.physicsBody!.velocity.dy < 0 {
             player.physicsBody?.velocity = CGVector(dx: player.physicsBody!.velocity.dx, dy: 950) // 플랫폼 컨택시 점프
-            contactB.node?.removeFromParent()
+            contactB.node?.removeFromParent() // 컨텍시 플랫폼 제거
             
-            movePlatform(40, 360, 900, 900)
+            movePlatform(40, 360, 900, 900) // 제거했다면 다음 플랫폼 생성
             
-            addScore()
+            addScore() // 점수 추가
         }
         
         //MARK: 게임오버 라인 플레이 충돌시 게임오버
@@ -235,24 +239,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     }
     
     // MARK: 플랫폼 생성 함수
+    
     func movePlatform(_ xLowestValue: Int,_ xHighestValue: Int,_ yLowestValue: Int,_ yHighestValue: Int){
         let platform = SKSpriteNode(imageNamed: "groundSub")
         
+        // 생성 되는 플랫폼 위치 조정
         platform.position = CGPoint(
             x: GKRandomDistribution(lowestValue: xLowestValue, highestValue: xHighestValue).nextInt(),
             y: GKRandomDistribution(lowestValue: yLowestValue, highestValue: yHighestValue).nextInt() + Int(player.position.y)
         )
+        // 이벤트 요소
         if score >= 10 {
-            
             let moveRight = SKAction.moveBy(x: 80, y: 0, duration: 1) // 오른쪽으로 이동
             let moveLeft = SKAction.moveBy(x: -80, y: 0, duration: 1) // 왼쪽으로 이동
             let sequence = SKAction.sequence([moveRight, moveLeft])
             let repeatForever = SKAction.repeatForever(sequence)
             platform.run(repeatForever)
         }
+        
         platform.zPosition = 3
         platform.setScale(0.25)
-        platform.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: platform.size.width - 100,height: platform.size.height))
+        platform.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: platform.size.width - 100,
+                                                                 height: platform.size.height))
         
         platform.physicsBody?.affectedByGravity = false // 중력 참일시 플랫폼 낙하
         platform.physicsBody?.categoryBitMask = bitmasks.platform.rawValue
